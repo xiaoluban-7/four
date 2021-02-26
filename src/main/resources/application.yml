@@ -1,0 +1,13 @@
+server:
+  servlet:
+    context-path: /
+  port: 80
+shiro:
+  loginUrl: /login.html
+#开放静态资源
+spring:
+  web:
+    resources:
+      static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  mvc:
+    static-path-pattern: /**
